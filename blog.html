@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <style>
+        body {
+            background-color: #7a9eb3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+
+            margin: 1rem 3rem;
+            padding: 1rem 4rem;
+            display: flex;
+            justify-content: space-between;
+
+            align-items: center;
+            align-content: center;
+            background-color: #6295bb;
+            border-radius: 4rem;
+            color: rgb(234, 242, 243);
+
+        }
+
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .right>ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .right>ul>li {
+
+            list-style: none;
+
+        }
+
+        .right>ul>li>a {
+            padding: .2rem;
+        }
+
+        main {
+            padding: 4rem;
+            margin: 1rem;
+            background-color: white;
+            border-radius: 3rem;
+        }
+
+        .herosection {
+
+            align-items: center;
+            align-content: center;
+
+        }
+
+
+
+
+
+
+        .ess {
+            color: rgb(78, 141, 141);
+        }
+
+        li>a {
+
+            text-decoration: none;
+            border: .1rem solid rgb(177, 168, 168);
+            padding: 3remrem;
+            border-radius: 4rem;
+        }
+
+        li>a:hover {
+            color: white;
+            background-color: #5bb276;
+            cursor: pointer;
+        }
+
+        .heroright {
+            border-radius: 4rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border: .1rem solid peru;
+            padding: 1rem;
+            margin: 1rem;
+            background-color: #a4b3c0;
+        }
+
+        .con {
+            padding: 2rem 6rem;
+            background-color: #aaa7cf;
+            display: flex;
+            flex-direction: column;
+            
+            border: .1rem solid blue;
+            margin: 1rem;
+            border-radius: 4rem;
+            color: rgb(55, 72, 72);
+
+        }
+        .con>h3,h4{
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            align-content: left;
+        }
+        .con>a {
+
+            color: aqua;
+            text-decoration: none;
+            padding: 1rem;
+        }
+
+        .con>a:hover {
+
+            cursor: pointer;
+            color: white;
+        }
+
+        footer {
+            background-color: #6295bb;
+            border-radius: 3rem;
+
+            margin: 1rem;
+            padding: 1rem 5rem;
+        }
+
+
+        .head {
+            color: #4e3eb4;
+        }
+
+        .con>h3 {
+            color: rgb(51, 90, 59);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .con>p {
+            color: white;
+        }
+
+        ul>li {
+            text-decoration: none;
+        }
+
+
+
+        /* responsive */
+        @media only screen and (max-width:1375px) {
+            * {
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+
+            .right>ul {
+                flex-direction: column;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            .herosection {
+                margin: 0;
+                flex-direction: column;
+            }
+
+            main {
+                margin: .1rem;
+                padding: .1rem;
+                border-radius: 1rem;
+            }
+
+            .heroleft {
+                position: static;
+                max-width: 100%;
+                margin: 0.3rem;
+                padding: 0.1rem;
+                border-radius: 1rem;
+                font-size: 1.5rem;
+
+            }
+
+            .heroright {
+                padding: .1rem;
+                margin: .1rem;
+                width: 100%;
+                border-radius: 1rem;
+            }
+
+            .con {
+                box-sizing: border-box;
+                margin: .2rem;
+                padding: .2rem;
+                border-radius: 1rem;
+            }
+
+            .herosection>h1 {
+                display: none;
+
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+
+        <nav>
+            <div class="left">Anish's Portfolio</div>
+            <div class="right">
+                <ul>
+
+                    <li><a href="./resume.html">Resume</a></li>
+                    <li><a href="./project.html">Projects</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                    <li><a href="./blog.html">Blogs</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="herosection">
+
+            <h1 style="margin: 1rem 27rem;">Anish Kumar Singh- Blogs</h1>
+            <div class="heroright">
+                <div class="con">
+                    
+                    <h3 class="head">How can I make pdf in my website not downloadable by user using HTML?</h3>
+                    <br>
+                    <p>Some measures you can take to make it slightly more difficult for users to download the PDF file directly</p>
+                    <a href="./b1.html">Read more</a>
+                </div>
+                <div class="con">
+                    <h3 class="head">How can I display code in HTML website without implimenting it to my website, just display for user as example
+
+                    </h3>
+                    <br>
+                    <p>If you want to display code on your HTML website without actually implementing it, you can use HTML entities and tags to achieve the desired display. Here's a step-by-step guide:</p>
+                    <a href="./b2.html">Read more</a>
+                </div>
+                <div class="con">
+                    <h3 class="head">How to take screenshot in laptop(window/mac/linux)?
+
+                    </h3>
+                    <br>
+                    <p>To take a screenshot on a laptop, you can use the following methods, depending on the operating system you're using:
+
+                    </p>
+                    <a href="./b3.html">Read more</a>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; All Rights Reserved 2023</p>
+    </footer>
+
+</body>
+
+</html>

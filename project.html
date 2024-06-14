@@ -1,0 +1,224 @@
+<!-- gym      https://anish494.github.io/gym/ -->
+<!-- psc      https://indrajeetcng55.github.io/Indrajeet_website/  -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body{
+    background-color: #7a9eb3;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    margin: 1rem 3rem;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: #6295bb;
+    border-radius: 4rem;
+    color: rgb(234, 242, 243);
+}
+.left{
+    font-size: 2rem;
+}
+footer{
+    margin: 1rem;
+    margin-top: 10rem;
+    background-color:#6295bb;
+    border-radius: 3rem;
+    
+   
+    padding: 1rem 5rem;
+}
+.right>ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.right>ul>li{
+    list-style: none;
+    
+}
+main{
+    padding: 4rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 3rem;
+}
+.herosection{
+    display: flex;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+
+}
+.heroleft{
+    font-size: 2rem;
+    max-width: 34%;
+border: .2rem solid greenyellow;
+background-color: #dfe4d7;
+margin: 2rem;
+padding: 4rem;
+border-radius: 5rem;
+align-items: center;
+justify-content: center;
+align-content: center;
+}
+
+.ess{
+    color: rgb(78, 141, 141);
+}
+li>a{
+    
+    text-decoration: none;
+    border: .1rem solid rgb(177, 168, 168);
+    padding: .2rem;
+    border-radius: 1rem;
+}
+li>a:hover{
+    color: white;
+    background-color: #5bb276;
+    cursor: pointer;
+}
+.heroright{
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: .1rem solid peru;
+    padding: 1rem 7rem;
+    margin: 2rem;
+    background-color: #a4b3c0;
+}
+.con{
+    background-color: #5d5999;
+    display: flex;
+    align-items: center;
+    border: .1rem solid blue;
+    margin: 1rem;
+    border-radius: 4rem;
+    color: aqua;
+    
+
+}
+.con:hover{
+    background-color: #41a95b;
+}
+.con>a{
+    
+    color: aqua;
+    text-decoration: none;
+    padding: 1rem;
+}
+.con>a:hover{
+    
+    cursor: pointer;
+    color:white;
+}
+.heroright>p{
+    color: rgb(25, 98, 98);
+    align-items: center;
+    align-content: center;
+    padding: 2rem;
+}
+
+
+
+
+ /* responsive */
+ @media only screen and (max-width:1375px){
+    *{max-width: 100%;}
+    .right>ul
+    {flex-direction: column;}
+    nav{
+        flex-direction: column;
+    }
+    .herosection{
+        margin: 0;
+        flex-direction: column;
+    }
+    main{
+        margin: .1rem;
+        padding: .1rem;
+        border-radius: 1rem;
+    }
+    .heroleft{
+        position: static;
+        max-width: 100%;
+        margin: 0.3rem;
+        padding: 0.1rem;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        
+    }
+
+    .heroright{
+        padding: .1rem;
+        margin: .1rem;
+        width: 100%;
+border-radius: 1rem;
+    }
+}
+    </style>
+</head>
+
+   
+<body>
+    <header>
+        <nav>
+            <div class="left">Anish's Portfolio</div>
+            <div class="right">
+                <ul>
+              
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <!-- <li><a href="blog.html">Blogs</a></li> -->
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="herosection">
+            <div class="heroleft">Hello,<br>
+                I am <i class="ess">Anish Kumar Singh</i>,<br>
+                <span id="element"></span>
+            </div>
+                
+            <div class="heroright">
+                <p>This is the website that can assist you during your PSC preparation exams if you are a engineer or anyway related to this field. You can always checkout the link and visit the site. Thank you.</p>
+                <div class="con"><a href="https://www.indrajeetkumarmahato.com.np/">Nepal Engineering Sewa</a></div>
+                
+                
+            </div>
+            
+        </div>
+    </main>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element' , {
+          strings: ['<i class="ess">Here are my projects:</i>'],
+          typeSpeed: 50,
+        });
+      </script>
+      <footer>
+        <p>&copy; All Rights Reserved 2023</p>
+      </footer>
+</body>
+
+</html>

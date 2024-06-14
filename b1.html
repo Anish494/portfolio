@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How can I make pdf in my website not downloadable by user using HTML</title>
+    <style>
+        main{
+            font-size: 1.2rem;
+            background-color: #d2dfd5;
+            margin: 1rem;
+            padding: 4rem 8rem;
+            border: .1rem solid greenyellow;
+            border-radius: 3rem;
+        }
+        h3{
+            color: blue;
+        }
+        h4{
+            color: rgb(63, 81, 198);
+        }
+        @media only screen and (max-width:1375px) {
+            /* max-width: 100%; */
+            main{
+                margin: .1rem;
+                padding: .2rem;
+                border-radius: 1rem;
+                max-width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h3 class="head">How can I make pdf in my website not downloadable by user using HTML?</h3>
+                    <br>
+                    
+                    <p>In HTML alone, you cannot prevent a user from downloading a PDF file. HTML is a markup language used for structuring content on the web, and it doesn't have built-in features to restrict file downloads.</p>
+                    <br>
+                    <p>However, you can take certain measures to make it more difficult for users to download the PDF file directly from your website. Here are a few options:</p>
+                    <br>
+                    <h4>1) Disable right-click:</h4>
+                    <p>  You can use JavaScript to disable the right-click context menu on your webpage. This can deter casual users from accessing the browser's native download options. However, determined users can still find alternative ways to download the file.
+                    </p>
+                    <br>
+                    <p>Here's an example of how to disable right-click using JavaScript:</p>
+                    <br>
+                    <p>
+                        <pre><code>
+                        &lt;script type="text/javascript"&gt;
+                            document.addEventListener
+                            ('contextmenu', function(event) 
+                            {
+                            event.preventDefault();
+                            });
+                        &lt;/script&gt;
+                            </code></pre>  
+                    </p>
+                    <br>
+                    
+                    <h4>2) Use PDF viewers:</h4>
+                    <p> Instead of providing a direct download link to the PDF file, you can embed it within a web page using an HTML &lt;embed&gt; or &lt;iframe&gt; tag. This makes it more difficult for users to access the actual file URL directly. However, determined users can still retrieve the PDF file URL from the page source or network requests.This allows users to view the PDF within your webpage but makes it more difficult to download the file directly.
+                    </p>
+                    <br>
+                    <p>Here's an example:</p>
+                    <p>
+                        <pre><code>
+                    &lt;iframe 
+                    src="your-pdf-file.pdf"
+                     width="100%" 
+                     height="600px"&gt;
+                     &lt;/iframe&gt;
+                            </code></pre>  
+                    </p>
+                    <br>
+                    
+                    <h4>3) Password-protect the PDF:</h4>
+                    <p>You can password-protect the PDF file using PDF authoring tools or libraries. This adds an extra layer of security, as users will need to know the password to open and download the file. However, it's important to note that determined users can still find ways to bypass the password protection.</p>
+                    <br>
+                    <h4>4) Implement server-side restrictions:</h4>
+                    <p>If you have control over the server hosting the PDF file, you can configure it to restrict access to the file based on user permissions or referer headers. This involves server-side programming and configuration, which may vary depending on the server technology you're using.</p>
+                    <br>
+                    <p>Remember that while these measures can make it more challenging for users to download the PDF file directly, they are not fullproof and determined users may still find ways to access the file.</p>    
+    </main>
+</body>
+</html>
